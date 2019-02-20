@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -135,7 +141,8 @@ table {
 
 html,
 body {
-  height: 100%;
+  width: 1100 px;
+  height: auto;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -148,27 +155,43 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
+.test {
+  border: 5px solid yellow;
+}
 html {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
+
+nav {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
 nav li {
-  display: inline;
-  padding: 20px 0;
+  display: inline-block;
   text-decoration: none;
   color: silver;
 }
 
+.logo {
+  display: inline-block;
+  right: 10 px;
+}
 .container-c2a,
 .container-image {
-  display: inline;
+  display: inline-block;
+  width: 45%;
 }
+
 a {
   display: inline;
-  padding: 40px;
+  padding: 20px;
   color: silver;
   text-decoration: none;
-}
-.logo {
-  display: float right;
 }
